@@ -1,0 +1,306 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+	text-shadow: 2px 2px rgba(0, 0, 0, .1);
+	color: white;
+}
+
+*:focus {
+	outline: 3px dashed rgba(0,0,0,0.5);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+/* nav */
+
+nav {
+	width: 100%;
+	height: 120px;
+	background-color: #eb1c31;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.nav-logo {
+	height: 80px;
+	/*border: 3px dashed white;*/
+	margin: 10px 20px;
+	padding-top: 20px;
+	margin-left: 40px;
+	display: flex;
+	align-items: center;
+}
+
+.logo {
+	height: 100%;
+}
+
+.nav-ul {
+	flex: 1;
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	/*border: 1px solid white;*/
+}
+
+.nav-ul li {
+	display: block;
+	text-align: center;
+	vertical-align: center;
+	border-radius: 10px;
+	padding: 10px 20px 10px 20px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.nav-ul li:hover {
+	background-color: rgba(0,0,0,0.15);
+}
+
+#more {
+	background-color: rgba(0,0,0,0.15);
+}
+
+#more:hover {
+	background-color: rgba(0,0,0,0.35);
+}
+
+.search-wrapper {
+	margin-left: 40px;
+	margin-right: 40px;
+	position: relative;
+}
+
+#search-icon {
+	display: block;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+}
+
+.search-bar {
+	box-sizing: content-box;
+	padding: 20px 40px 20px 40px;
+	width: 200px;
+	border-radius: 10px;
+	border: none;
+	color: #555;
+	text-shadow: none;
+	font-size: 20px;
+	box-shadow: 2px 5px  5px rgba(0,0,0,0.4)
+}
+
+
+/* articles */
+
+.main-title-wrapper {
+	width: 500px;
+	padding-top: 50px;
+	/*border: 1px solid black;*/
+	left: calc(50vw - 250px);
+	position: absolute;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main-h1 {
+	margin: 0;
+	background-color: white;
+	padding: 10px 20px;
+	font-size: 40px;
+	color: #333;
+}
+
+.main-h1-bottom {
+	box-shadow: 2px 30px 10px rgba(0,0,0,0.2);
+}
+
+.article-container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: minmax(630px, 730px) minmax(530px, 630px);
+}
+
+.article {
+	display: flex;
+	flex-direction: column;
+/*	align-items: center;*/
+	justify-content: center;
+	background-color: #b3251b;
+	border: 1px solid black;
+}
+
+.article-top {
+	padding-top: 170px;
+}
+
+.article >* {
+	margin-left: 3vw;
+}
+
+.person {
+	width: 40%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	/*border: 1px solid white;*/
+}
+
+.prof-pic-wrapper {
+	background-color: white;
+	padding: 10px;
+	width: 80px;
+	height: 80px;
+	border-radius: 4px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-shadow: 0 12px 10px rgba(0,0,0,0.2);
+	transform: rotate(-15deg);
+}
+
+.prof-pic {
+	display: block;
+	height: 65px;
+	border-radius: 4px;
+}
+
+.prof-wrapper {
+	/*border: 1px solid white;*/
+	font-size: 20px;
+}
+
+.wrote {
+	font-family: 'Courgette', cursive;
+}
+
+.article-title {
+	max-width: 700px;
+	font-size: 45px;
+}
+
+.comment {
+	display: inline-block;
+	height: 30px;
+	/*background: white;*/
+	width: 15%;
+	font-size: 15px;
+}
+
+.comment-span {
+	float: right;
+}
+
+.article-tags {
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.article-tag {
+	margin-right: 30px;
+	font-size: 18px;
+}
+
+.article-tag::before {
+	content: '#';
+	color: #61140f;
+}
+
+.arrow {
+	font-size: 50px;
+	justify-self: flex-end;
+}
+
+/* cover */
+
+.cover {
+	display: grid;
+	grid-template-rows: repeat(3, 80vh);
+	grid-gap: 40px;
+	margin: 50px 40px;
+	text-shadow: none;
+}
+
+.articles-grid {
+	background-color: #c55cf2;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-gap: 20px;
+}
+
+.g-article {
+	background-color: white;
+	position: relative;
+}
+
+.g-header {
+	color: #000;
+	font-size: 30px;
+}
+
+.g-article span {
+	display: block;
+	margin-top: 30px;
+	color: #444;
+	font-size: 15px;
+}
+
+.author {
+	color: #444;
+	font-size: 15px;
+}
+
+.g-article p {
+	color: #444;
+	font-family: Elena, serif;
+	text-shadow: none;
+	font-size: 22px;
+	line-height: 40px;
+	font-weight: 100;
+}
+
+.g-arrow {
+	color: #ff1900;
+	text-shadow: none;
+	font-size: 35px;
+	position: absolute;
+	bottom: 50px;
+}
+
+.graphic {
+background-color: #ff9900;
+	grid-column: span 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
