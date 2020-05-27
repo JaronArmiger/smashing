@@ -239,14 +239,13 @@ nav {
 }
 
 .articles-grid {
-	background-color: #c55cf2;
+	/*background-color: #c55cf2;*/
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	grid-gap: 20px;
 }
 
 .g-article {
-	background-color: white;
 	position: relative;
 }
 
@@ -274,6 +273,7 @@ nav {
 	font-size: 22px;
 	line-height: 40px;
 	font-weight: 100;
+
 }
 
 .g-arrow {
@@ -281,13 +281,65 @@ nav {
 	text-shadow: none;
 	font-size: 35px;
 	position: absolute;
-	bottom: 50px;
+	bottom: 10px;
 }
 
 .graphic {
-background-color: #ff9900;
+	background-color: #e82a2a;
+	border-radius: 15px;
 	grid-column: span 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
+
+.graphic img {
+	height: 40%;
+}
+
+.graphic h1 {
+	font-size: 50px;
+	text-align: center;
+	text-decoration: underline;
+	text-decoration-color: #ed7979;
+}
+
+.graphic p {
+	width: 80%;
+	text-align: center;
+	font-family: Elena, serif;
+	font-size: 25px;
+	line-height: 35px;
+}
+
+.graphic a {
+	text-decoration: underline;
+	text-decoration-color: #ed7979;
+	font-family: Elena, serif;
+}
+
+.graphic button {
+	width: 35%;
+	height: 8%;
+	border-radius: 15px;
+	border: none;
+	color: #4967eb;
+	text-shadow: none;
+	font-size: 20px;
+}
+
+.graphic button:hover {
+	color: #ed7979;
+}
+
+.graphic span {
+	display: block;
+	font-family: Elena, serif;
+	text-shadow: none;
+	margin: 40px 0;
+}
+
 
 
 
